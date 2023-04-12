@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+     {% load sass_tags %}
+<head>
+    <meta charset="utf-8">
+    <title>DGcom - Web Design Agency HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% sass_src 'scss/slide.scss' %}" rel="stylesheet" type="text/css" />
+    <!-- Template Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <style>
+        .counter {
+  font-size: 60px;
+  color: #0c0c0c;
+}
+.button1{
+    color: white;
+    background-color:  #009CFF;
+    border: none;
+    border-radius: 5px;
+
+
+}
+.ha{
+
+}
+
+
+.rightbox {
+  padding: 0em 0rem 0em 0em;
+  height: 100%;
+}
+
+.rb-container {
+  font-family: "PT Sans", sans-serif;
+ width: 100%;
+}
+
+.rb-container ul.rb {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  margin: auto;
+  border-left: 2px dashed #0f8bb4;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb li:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -10px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgb(9, 116, 152);
+  border-radius: 500%;
+  background: #ffffff;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: #1a1b1d;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: #005f7a;
+  position: relative;
+  font-size:18px;
+}
+
+.item-title {
+  color: #000000;
+}
+
+
+input::placeholder {
+  padding: 5em 5em 1em 1em;
+  color: #50d890;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Brand & Contact Start -->
+    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                <a href="" class="navbar-brand m-0 p-0">
+                    <h1 class="fw-bold text-primary m-0"><i class="	fas fa-cloud-sun me-3"></i>Techcloud</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+            </div>
+            <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-clock text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Opening Hour</p>
+                                <h6 class="mb-0">Mon - Fri,9:00 - 5:30</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Call Us</p>
+                                <h6 class="mb-0">+91 854623369</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-envelope text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Email Us</p>
+                                <h6 class="mb-0">techcloud@info.in</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand & Contact End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto p-3 p-lg-0">
+                <a href="{% url 'base' %}" class="nav-item nav-link">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link active">About Us</a>
+                <a href="{% url 'project' %}" class="nav-item nav-link">Course</a>
+                <a href="{% url 'placement' %}" class="nav-item nav-link">Placement</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+   
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5 mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="static/img/about1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                        <h1 class="display-6 mb-4">WELCOME TO TECHCOLUD</h1>
+                        <p>
+                           TECHCLOUD is a platform which help you to discover the scope of Future in Software Industry. We offer a wide variety of software solutions including website development and software training.  TECHCLOUD  is a well-established software company in Kochi located in Ravipuram. We entered into the global market in 2016 and with in a short period of time, we recognized as one of the top institutes in Kerala. This is not a magical event; it is because of the Quality of our services and the satisfaction of our clients and students. We have a client community in world wide. We have the most creative and uniquely talented website designers to create and train using the latest website and IT standards and to provide IT based solutions under one roof. Our services are ranges from Designing, Development, Training and Certification. .
+                        </p>
+                        <p class="mb-4">Join TECHCLOUD , Kerala’s Best Software Training Institute in Kochi and Trivandrum and experience the difference. Any course at any time is our motto. Our training course assures 100% Software Job Placements.</p>
+                        <div class="d-flex align-items-center mb-4 pb-2">
+                         
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+     
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <h1 class="display-6 mb-4">Our Vision</h1>
+                        <h6 class="section-title bg-white text-start text-primary pe-3 pt-3"></h6>
+
+                        <p class="mb-4">To Be A Key Player In Training And Development Of Knowledge And Technology By Producing And Providing Resourceful Outputs To The Growing Industries.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6 mb-4">Our Mision</h1>
+                        <h6 class="section-title bg-white text-start text-primary pe-3 pt-3"></h6>
+
+                        <p class="mb-4">We Offer A Best Platform For An Innovative Training And Development Experience To Access The Future Of Knowledge By Connecting The Advanced Technology To Inspire Each One Through Delivering A Smart Team Work Involving Quality And Satisfaction As Two Important Strategic Tools.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Project Start -->
+    
+    <div class="container-fluid pt-5 mb-0 ">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                
+                <h1 class="mb-5">Why do you choose Skill Coach?</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3"></h6>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="container ha">
+                        <div class="rightbox">
+                          <div class="rb-container">
+                            <ul class="rb">
+                              <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                    100% Placement
+                                </div>
+                                <div class="item-title">We provide 100% placement assured training programs at Cochin, Trivandrum, Calicut, Kannur with a clientele of more than 400 IT and Embedded Companies.
+                                    
+                                </div>
+                      
+                              </li>
+                              <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                    Team of Professional & Experienced Trainers
+                                </div>
+                                <div class="item-title">We are a team of professional trainers with more than 19 years of domain expertise.</div>
+                      
+                              </li>
+                      
+                              <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                    Value for money
+                                </div>
+                                <div class="item-title">We offer training solutions that are true value-for-money. We are passionate about enhancing excellence and committed to quality training affiliated with National Skill India Mission.</div>
+                      
+                              </li>
+                              <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                    Expertise Level
+                                </div>
+                                <div class="item-title">Skill Coach offers training from Beginners level to Experts level.</div>
+                      
+                              </li>
+                      
+                            </ul>
+                      
+                          </div>
+                        </div>
+                      </div>   
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="static/img/cre.webp" alt="" style="object-fit: cover;">
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Kochi,Kerala</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our courses</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="static/img/project-1.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="static/img/project-2.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="static/img/project-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="static/img/project-4.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="static/img/project-5.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="static/img/project-6.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>subscribe using email id</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Techcloud</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script>
+        const counters = document.querySelectorAll(".counter");
+    
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = `${Math.ceil(count + increment)}`;
+          setTimeout(updateCounter, 1);
+        } else counter.innerText = target;
+      };
+      updateCounter();
+    });
+    
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/counterup/counterup.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
